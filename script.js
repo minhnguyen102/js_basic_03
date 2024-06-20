@@ -31,7 +31,7 @@
 //     return tong;
 // }
 
-// var ketQua = Tong(10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+// var ketQua = Tong(10, 20, 30, 40, 50, 60, 70, 80, 90, 1000);
 // console.log(ketQua)
 
 
@@ -178,28 +178,28 @@
 // 4.2 every() : kiểm tra tất cả các phần tử của mảng có thỏa mãn 1 điều kiện gì đó không 
 // chỉ trả ra giá trị: true or false 
 
-const diemThi = [
-    {
-        mon : "Toan",
-        diem : 9.7
-    },
-    {
-        mon : "Hoa",
-        diem : 9.7
-    },
-    {
-        mon : "Anh",
-        diem : 9.7
-    },
-    {
-        mon : "Van",
-        diem : 3.7
-    },
-    {
-        mon : "Toan",
-        diem : 7.7
-    },
-]
+// const diemThi = [
+//     {
+//         mon : "Toan",
+//         diem : 9.7
+//     },
+//     {
+//         mon : "Hoa",
+//         diem : 9.7
+//     },
+//     {
+//         mon : "Anh",
+//         diem : 9.7
+//     },
+//     {
+//         mon : "Van",
+//         diem : 3.7
+//     },
+//     {
+//         mon : "Toan",
+//         diem : 7.7
+//     },
+// ]
 
 // console.log(diemThi)
 
@@ -282,5 +282,25 @@ const diemThi = [
 // console.log(diemThiMoi)
 
 
+// 4.7 Reduce()
+// Array.reducc(function(accumullator, item, index, array){}, initialValue)  // trả ra giá trị cuối cùng
+// const  numbers = [1, 2, 3, 4];
 
+// // const sum = numbers.reduce((total, item) => {
+// //     console.log(total);
+// //     console.log(item);
+// //     console.log("------------------------");
+// //     return total + item;
+// // })
+// // // Trường hợp khong có giá trị khởi tại cho total, thì total mặc định lấy giá trị đầu tiên của mảng  
+// // console.log(sum)
     
+// const sum_2 = numbers.reduce((total, item) => {
+//     console.log(total);
+//     console.log(item);
+//     console.log("------------------------");
+//     return total + item;
+// }, 10)
+// // có giá trị khởi tạo initialValue cho total
+
+// console.log(sum_2)
